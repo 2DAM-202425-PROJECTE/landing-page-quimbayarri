@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pressupostos */
+.budget-card {
+    border: 2px solid #e5e7eb; /* Canvia el color del borde */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* Afegir fons blanc */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra inicial suau */
+}
+
+.budget-card h3 {
+    font-size: 1.75rem; /* Mida més gran per als títols */
+    color: #1f2937; /* Color més fosc per a destacar */
+    margin-bottom: 16px;
+}
+
+.budget-card p {
+    font-size: 1.125rem; /* Mida del text més gran per facilitar la lectura */
+    color: #4b5563;
+    margin-bottom: 24px;
+}
+
+.budget-card .price {
+    font-size: 2rem; /* Destacar el preu */
+    font-weight: bold;
+    color: #1d4ed8; /* Color indigo */
+}
+
+.budget-card:hover {
+    transform: translateY(-10px); /* Elevar lleugerament en hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Augmentar ombra en hover */
+}
+
+/* Afegir espaiat entre targetes */
+.budget-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
